@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:12.04
 MAINTAINER Dan Connolly <dckc@madmode.com>
 
 # Usage:
