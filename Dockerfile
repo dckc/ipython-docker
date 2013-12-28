@@ -32,6 +32,10 @@ WORKDIR /notebooks
 # Formal Logic in Python (FLiP)
 RUN pip install flip
 
+# for converting notebooks...
+RUN pip install pygments
+RUN apt-get install -y pandoc
+
 EXPOSE 8888
 
 CMD ipython notebook --no-browser --ip=0.0.0.0 --port 8888
