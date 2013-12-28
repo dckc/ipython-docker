@@ -29,6 +29,9 @@ RUN (apt-get install -y libzmq-dev python-dev libc-dev; \
 VOLUME /notebooks
 WORKDIR /notebooks
 
+# Formal Logic in Python (FLiP)
+RUN pip install flip
+
 EXPOSE 8888
 
 CMD ipython notebook --no-browser --ip=0.0.0.0 --port 8888
